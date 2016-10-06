@@ -1,0 +1,36 @@
+"ddg.type","ddg.num","ddg.name","ddg.value","ddg.return.linked","ddg.auto.created","ddg.time","ddg.snum","ddg.startLine","ddg.startCol","ddg.endLine","ddg.endCol"
+"Start",1,"eepOdy.R","eepOdy.R",FALSE,FALSE,0.393999999999991,NA,NA,NA,NA,NA
+"Operation",2,"x <- read.csv(""http://harvardforest.fas.harvard.edu/data/p14","x <- read.csv(""http://harvardforest.fas.harvard.edu/data/p14",FALSE,FALSE,0.849999999999994,0,4,1,4,99
+"Operation",3,"sites <- read.csv(""http://harvardforest.fas.harvard.edu/data","sites <- read.csv(""http://harvardforest.fas.harvard.edu/data",FALSE,FALSE,0.906999999999996,0,5,1,5,105
+"Operation",4,"nant.sites <- read.csv(""http://harvardforest.fas.harvard.edu","nant.sites <- read.csv(""http://harvardforest.fas.harvard.edu",FALSE,FALSE,0.941000000000003,0,6,1,6,114
+"Operation",5,"x[, ""county""] <- as.character(x[, ""county""])","x[, ""county""] <- as.character(x[, ""county""])",FALSE,FALSE,0.971000000000004,0,7,1,7,42
+"Operation",6,"x[, ""locality""] <- as.character(x[, ""locality""])","x[, ""locality""] <- as.character(x[, ""locality""])",FALSE,FALSE,1.00399999999999,0,8,1,8,46
+"Operation",7,"x <- x[grepl(""aphrud"", as.character(x[, ""code""])), ]","x <- x[grepl(""aphrud"", as.character(x[, ""code""])), ]",FALSE,FALSE,1.06099999999999,0,10,1,10,49
+"Operation",8,"nant.sites[, ""site""] <- as.character(nant.sites[, ""site""])","nant.sites[, ""site""] <- as.character(nant.sites[, ""site""])",FALSE,FALSE,1.09799999999998,0,13,1,13,56
+"Operation",9,"nant <- (x[grepl(""nant"", as.character(x[, ""county""])), ])","nant <- (x[grepl(""nant"", as.character(x[, ""county""])), ])",FALSE,FALSE,1.119,0,14,1,14,54
+"Operation",10,"nant[nant[, ""locality""] == ""NorwoodFarm"", ""locality""] <- ""No","nant[nant[, ""locality""] == ""NorwoodFarm"", ""locality""] <- ""No",FALSE,FALSE,1.15499999999999,0,15,1,15,69
+"Operation",11,"nant[nant[, ""locality""] == ""Madequecham"", ""locality""] <- ""Ma","nant[nant[, ""locality""] == ""Madequecham"", ""locality""] <- ""Ma",FALSE,FALSE,1.17399999999999,0,16,1,16,68
+"Operation",12,"for (loc in unique(nant[, ""locality""])) {    nant[nant[, ""lo","for (loc in unique(nant[, ""locality""])) {    nant[nant[, ""lo",FALSE,FALSE,1.21299999999999,0,17,1,20,1
+"Operation",13,"duke <- (x[grepl(""dukes"", as.character(x[, ""county""])), ])","duke <- (x[grepl(""dukes"", as.character(x[, ""county""])), ])",FALSE,FALSE,1.33500000000001,0,22,1,22,55
+"Operation",14,"duke[is.na(duke[, ""latitude""]), ""longitude""] <- 70.8","duke[is.na(duke[, ""latitude""]), ""longitude""] <- 70.8",FALSE,FALSE,1.375,0,23,1,23,50
+"Operation",15,"duke[is.na(duke[, ""latitude""]), ""latitude""] <- 41.32","duke[is.na(duke[, ""latitude""]), ""latitude""] <- 41.32",FALSE,FALSE,1.39299999999999,0,24,1,24,50
+"Operation",16,"include <- (grepl(""connect"", x[, ""state""]) | grepl(""rhode"", ","include <- (grepl(""connect"", x[, ""state""]) | grepl(""rhode"", ",FALSE,FALSE,1.41399999999999,0,27,1,29,13
+"Operation",17,"ants <- x[include, ]","ants <- x[include, ]",FALSE,FALSE,1.44499999999999,0,30,1,30,19
+"Operation",18,"ants <- rbind(ants, duke, nant)","ants <- rbind(ants, duke, nant)",FALSE,FALSE,1.489,0,32,1,32,29
+"Operation",19,"ME <- x[x[, ""state""] == ""maine"", ]","ME <- x[x[, ""state""] == ""maine"", ]",FALSE,FALSE,1.53999999999999,0,34,1,34,32
+"Operation",20,"ME <- ME[grepl(""waterboro barrens"", ME[, ""locality""], ign = ","ME <- ME[grepl(""waterboro barrens"", ME[, ""locality""], ign = ",FALSE,FALSE,1.57799999999999,0,35,1,35,62
+"Operation",21,"ants <- ants[ants[, ""state""] != ""maine"", ]","ants <- ants[ants[, ""state""] != ""maine"", ]",FALSE,FALSE,1.60499999999999,0,37,1,37,40
+"Operation",22,"ants <- rbind(ants, ME)","ants <- rbind(ants, ME)",FALSE,FALSE,1.643,0,38,1,38,22
+"Operation",23,"missing <- ants[is.na(ants[, ""latitude""]), ]","missing <- ants[is.na(ants[, ""latitude""]), ]",FALSE,FALSE,1.68600000000001,0,40,1,40,42
+"Operation",24,"missing[(missing[, ""county""] == ""litchfield"" & missing[, ""lo","missing[(missing[, ""county""] == ""litchfield"" & missing[, ""lo",FALSE,FALSE,1.71799999999999,0,41,1,43,58
+"Operation",25,"missing[(missing[, ""county""] == ""litchfield"" & !(missing[, ""","missing[(missing[, ""county""] == ""litchfield"" & !(missing[, """,FALSE,FALSE,1.744,0,44,1,46,60
+"Operation",26,"missing[grepl(""willimantic"", missing[, ""locality""], ign = TR","missing[grepl(""willimantic"", missing[, ""locality""], ign = TR",FALSE,FALSE,1.76899999999999,0,47,1,48,52
+"Operation",27,"missing[grepl(""new haven"", missing[, ""county""], ign = TRUE),","missing[grepl(""new haven"", missing[, ""county""], ign = TRUE),",FALSE,FALSE,1.8,0,49,1,50,63
+"Operation",28,"missing[grepl(""block island"", missing[, ""locality""], ign = T","missing[grepl(""block island"", missing[, ""locality""], ign = T",FALSE,FALSE,1.82499999999999,0,51,1,52,63
+"Operation",29,"ants <- ants[!(is.na(ants[, ""latitude""])), ]","ants <- ants[!(is.na(ants[, ""latitude""])), ]",FALSE,FALSE,1.85199999999999,0,54,1,54,42
+"Operation",30,"ants <- rbind(ants, missing)","ants <- rbind(ants, missing)",FALSE,FALSE,1.89400000000001,0,55,1,55,27
+"Operation",31,"ne.map <- qmap(location = ""new england"", zoom = 6)","ne.map <- qmap(location = ""new england"", zoom = 6)",FALSE,FALSE,3.61399999999999,0,58,1,58,45
+"Operation",32,"pdf(""NE_arudis_map.pdf"")","pdf(""NE_arudis_map.pdf"")",FALSE,FALSE,3.895,0,60,1,60,24
+"Operation",33,"ne.map + geom_point(data = ants, aes(x = longitude, y = lati","ne.map + geom_point(data = ants, aes(x = longitude, y = lati",FALSE,FALSE,3.90900000000001,0,61,1,61,80
+"Operation",34,"dev.off()","dev.off()",FALSE,FALSE,3.947,0,62,1,62,9
+"Finish",35,"eepOdy.R","eepOdy.R",FALSE,FALSE,3.965,NA,NA,NA,NA,NA
