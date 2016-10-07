@@ -9,7 +9,7 @@
 "p1" : {
 "rdt:name" : "eepOdy.R",
 "rdt:type" : "Start",
-"rdt:elapsedTime" : "0.393999999999991",
+"rdt:elapsedTime" : "0.454000000000008",
 "rdt:scriptNum" : "NA",
 "rdt:startLine" : "NA",
 "rdt:startCol" : "NA",
@@ -20,7 +20,7 @@
 "p2" : {
 "rdt:name" : "x <- read.csv(\"http://harvardforest.fas.harvard.edu/data/p14",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "0.849999999999994",
+"rdt:elapsedTime" : "0.914000000000016",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "4",
 "rdt:startCol" : "1",
@@ -31,7 +31,7 @@
 "p3" : {
 "rdt:name" : "sites <- read.csv(\"http://harvardforest.fas.harvard.edu/data",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "0.906999999999996",
+"rdt:elapsedTime" : "0.971000000000004",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "5",
 "rdt:startCol" : "1",
@@ -42,7 +42,7 @@
 "p4" : {
 "rdt:name" : "nant.sites <- read.csv(\"http://harvardforest.fas.harvard.edu",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "0.941000000000003",
+"rdt:elapsedTime" : "1.005",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "6",
 "rdt:startCol" : "1",
@@ -53,7 +53,7 @@
 "p5" : {
 "rdt:name" : "x[, \"county\"] <- as.character(x[, \"county\"])",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "0.971000000000004",
+"rdt:elapsedTime" : "1.035",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "7",
 "rdt:startCol" : "1",
@@ -64,7 +64,7 @@
 "p6" : {
 "rdt:name" : "x[, \"locality\"] <- as.character(x[, \"locality\"])",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.00399999999999",
+"rdt:elapsedTime" : "1.071",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "8",
 "rdt:startCol" : "1",
@@ -75,7 +75,7 @@
 "p7" : {
 "rdt:name" : "x <- x[grepl(\"aphrud\", as.character(x[, \"code\"])), ]",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.06099999999999",
+"rdt:elapsedTime" : "1.12099999999998",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "10",
 "rdt:startCol" : "1",
@@ -86,7 +86,7 @@
 "p8" : {
 "rdt:name" : "nant.sites[, \"site\"] <- as.character(nant.sites[, \"site\"])",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.09799999999998",
+"rdt:elapsedTime" : "1.15699999999998",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "13",
 "rdt:startCol" : "1",
@@ -97,7 +97,7 @@
 "p9" : {
 "rdt:name" : "nant <- (x[grepl(\"nant\", as.character(x[, \"county\"])), ])",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.119",
+"rdt:elapsedTime" : "1.18000000000001",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "14",
 "rdt:startCol" : "1",
@@ -108,7 +108,7 @@
 "p10" : {
 "rdt:name" : "nant[nant[, \"locality\"] == \"NorwoodFarm\", \"locality\"] <- \"No",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.15499999999999",
+"rdt:elapsedTime" : "1.22299999999998",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "15",
 "rdt:startCol" : "1",
@@ -119,7 +119,7 @@
 "p11" : {
 "rdt:name" : "nant[nant[, \"locality\"] == \"Madequecham\", \"locality\"] <- \"Ma",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.17399999999999",
+"rdt:elapsedTime" : "1.24299999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "16",
 "rdt:startCol" : "1",
@@ -130,7 +130,7 @@
 "p12" : {
 "rdt:name" : "for (loc in unique(nant[, \"locality\"])) {    nant[nant[, \"lo",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.21299999999999",
+"rdt:elapsedTime" : "1.27699999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "17",
 "rdt:startCol" : "1",
@@ -141,7 +141,7 @@
 "p13" : {
 "rdt:name" : "duke <- (x[grepl(\"dukes\", as.character(x[, \"county\"])), ])",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.33500000000001",
+"rdt:elapsedTime" : "1.399",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "22",
 "rdt:startCol" : "1",
@@ -152,7 +152,7 @@
 "p14" : {
 "rdt:name" : "duke[is.na(duke[, \"latitude\"]), \"longitude\"] <- 70.8",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.375",
+"rdt:elapsedTime" : "1.43699999999998",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "23",
 "rdt:startCol" : "1",
@@ -163,7 +163,7 @@
 "p15" : {
 "rdt:name" : "duke[is.na(duke[, \"latitude\"]), \"latitude\"] <- 41.32",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.39299999999999",
+"rdt:elapsedTime" : "1.45599999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "24",
 "rdt:startCol" : "1",
@@ -174,7 +174,7 @@
 "p16" : {
 "rdt:name" : "include <- (grepl(\"connect\", x[, \"state\"]) | grepl(\"rhode\", ",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.41399999999999",
+"rdt:elapsedTime" : "1.482",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "27",
 "rdt:startCol" : "1",
@@ -185,7 +185,7 @@
 "p17" : {
 "rdt:name" : "ants <- x[include, ]",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.44499999999999",
+"rdt:elapsedTime" : "1.553",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "30",
 "rdt:startCol" : "1",
@@ -196,7 +196,7 @@
 "p18" : {
 "rdt:name" : "ants <- rbind(ants, duke, nant)",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.489",
+"rdt:elapsedTime" : "1.601",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "32",
 "rdt:startCol" : "1",
@@ -207,7 +207,7 @@
 "p19" : {
 "rdt:name" : "ME <- x[x[, \"state\"] == \"maine\", ]",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.53999999999999",
+"rdt:elapsedTime" : "1.65799999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "34",
 "rdt:startCol" : "1",
@@ -218,7 +218,7 @@
 "p20" : {
 "rdt:name" : "ME <- ME[grepl(\"waterboro barrens\", ME[, \"locality\"], ign = ",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.57799999999999",
+"rdt:elapsedTime" : "1.69899999999998",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "35",
 "rdt:startCol" : "1",
@@ -229,7 +229,7 @@
 "p21" : {
 "rdt:name" : "ants <- ants[ants[, \"state\"] != \"maine\", ]",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.60499999999999",
+"rdt:elapsedTime" : "1.732",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "37",
 "rdt:startCol" : "1",
@@ -240,7 +240,7 @@
 "p22" : {
 "rdt:name" : "ants <- rbind(ants, ME)",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.643",
+"rdt:elapsedTime" : "1.774",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "38",
 "rdt:startCol" : "1",
@@ -251,7 +251,7 @@
 "p23" : {
 "rdt:name" : "missing <- ants[is.na(ants[, \"latitude\"]), ]",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.68600000000001",
+"rdt:elapsedTime" : "1.82300000000001",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "40",
 "rdt:startCol" : "1",
@@ -262,7 +262,7 @@
 "p24" : {
 "rdt:name" : "missing[(missing[, \"county\"] == \"litchfield\" & missing[, \"lo",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.71799999999999",
+"rdt:elapsedTime" : "1.857",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "41",
 "rdt:startCol" : "1",
@@ -273,7 +273,7 @@
 "p25" : {
 "rdt:name" : "missing[(missing[, \"county\"] == \"litchfield\" & !(missing[, \"",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.744",
+"rdt:elapsedTime" : "1.88200000000001",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "44",
 "rdt:startCol" : "1",
@@ -284,7 +284,7 @@
 "p26" : {
 "rdt:name" : "missing[grepl(\"willimantic\", missing[, \"locality\"], ign = TR",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.76899999999999",
+"rdt:elapsedTime" : "1.90600000000001",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "47",
 "rdt:startCol" : "1",
@@ -295,7 +295,7 @@
 "p27" : {
 "rdt:name" : "missing[grepl(\"new haven\", missing[, \"county\"], ign = TRUE),",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.8",
+"rdt:elapsedTime" : "1.93199999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "49",
 "rdt:startCol" : "1",
@@ -306,7 +306,7 @@
 "p28" : {
 "rdt:name" : "missing[grepl(\"block island\", missing[, \"locality\"], ign = T",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.82499999999999",
+"rdt:elapsedTime" : "1.95499999999998",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "51",
 "rdt:startCol" : "1",
@@ -317,7 +317,7 @@
 "p29" : {
 "rdt:name" : "ants <- ants[!(is.na(ants[, \"latitude\"])), ]",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.85199999999999",
+"rdt:elapsedTime" : "1.97800000000001",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "54",
 "rdt:startCol" : "1",
@@ -328,7 +328,7 @@
 "p30" : {
 "rdt:name" : "ants <- rbind(ants, missing)",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "1.89400000000001",
+"rdt:elapsedTime" : "2.018",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "55",
 "rdt:startCol" : "1",
@@ -339,7 +339,7 @@
 "p31" : {
 "rdt:name" : "ne.map <- qmap(location = \"new england\", zoom = 6)",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "3.61399999999999",
+"rdt:elapsedTime" : "3.31999999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "58",
 "rdt:startCol" : "1",
@@ -350,7 +350,7 @@
 "p32" : {
 "rdt:name" : "pdf(\"NE_arudis_map.pdf\")",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "3.895",
+"rdt:elapsedTime" : "3.62899999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "60",
 "rdt:startCol" : "1",
@@ -361,7 +361,7 @@
 "p33" : {
 "rdt:name" : "ne.map + geom_point(data = ants, aes(x = longitude, y = lati",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "3.90900000000001",
+"rdt:elapsedTime" : "3.642",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "61",
 "rdt:startCol" : "1",
@@ -372,7 +372,7 @@
 "p34" : {
 "rdt:name" : "dev.off()",
 "rdt:type" : "Operation",
-"rdt:elapsedTime" : "3.947",
+"rdt:elapsedTime" : "3.68199999999999",
 "rdt:scriptNum" : "0",
 "rdt:startLine" : "62",
 "rdt:startCol" : "1",
@@ -383,7 +383,7 @@
 "p35" : {
 "rdt:name" : "eepOdy.R",
 "rdt:type" : "Finish",
-"rdt:elapsedTime" : "3.965",
+"rdt:elapsedTime" : "3.70699999999999",
 "rdt:scriptNum" : "NA",
 "rdt:startLine" : "NA",
 "rdt:startCol" : "NA",
@@ -399,11 +399,10 @@
 "rdt:rVersion" : "R version 3.3.1 (2016-06-21)",
 "rdt:script" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/src/eepOdy/src/eepOdy.R",
 "rdt:sourcedScripts" : ""
-,
 "rdt:scriptTimeStamp" : "2016-10-06T16.47.20EDT",
 "rdt:workingDirectory" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/src/eepOdy/src",
 "rdt:ddgDirectory" : "./eepOdy_ddg",
-"rdt:ddgTimeStamp" : "2016-10-06T16.56.07EDT",
+"rdt:ddgTimeStamp" : "2016-10-06T17.15.50EDT",
 "rdt:rdatatrackerVersion" : "2.24.1",
 "rdt:InstalledPackages": [
 	{"package":"CamFlow", "version":"0.0.0.9000"},
