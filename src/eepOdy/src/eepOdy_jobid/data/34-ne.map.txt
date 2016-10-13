@@ -1,9 +1,0 @@
-[[ 1 ]] c("c(-77.842917771875, -63.780417771875, -77.842917771875, -63.780417771875)", "c(38.6814867544172, 38.6814867544172, 48.8034691452259, 48.8034691452259)")
-[[ 2 ]] c("<environment>", "<environment>", "<environment>")
-[[ 3 ]] c("<ggproto object: Class ScalesList>", "    add: function", "    clone: function", "    find: function", "    get_scales: function", "    has_scale: function", "    input: function", "    n: function", "    non_position_scales: function", "    scales: list", "    super:  <ggproto object: Class ScalesList>")
-[[ 4 ]] c("lon", "lat")
-[[ 5 ]] c("list()", "list()", "list()", "list()", "list()", "0", "0", "c(0, 0, 0, 0)", "right")
-[[ 6 ]] c("<ggproto object: Class CoordMap, Coord>", "    aspect: function", "    distance: function", "    is_linear: function", "    labels: function", "    limits: list", "    orientation: NULL", "    params: list", "    projection: mercator", "    range: function", "    render_axis_h: function", "    render_axis_v: function", "    render_bg: function", "    render_fg: function", "    train: function", "    transform: function", "    super:  <ggproto object: Class CoordMap, Coord>")
-[[ 7 ]] TRUE
-[[ 8 ]] <environment: 0x7ffeb71aed80>
-[[ 9 ]] c("lon", "lat", "xmin", "xmax", "ymin", "ymax")
