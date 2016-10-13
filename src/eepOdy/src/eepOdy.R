@@ -63,4 +63,3 @@ pdf('NE_arudis_map.pdf')
 ne.map + geom_point(data=ants,aes(x=longitude,y=latitude),col='violet',size=0.5)
 dev.off()
 
-

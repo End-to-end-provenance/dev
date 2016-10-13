@@ -1,4 +1,6 @@
-
+### Check if ggmap is install and then library
+if (!'ggmap' %in% installed.packages()[,1]){install.packages('ggmap')}
+library(ggmap)
 ### Import data from the Harvard Forest Archives
 ### Data courtesy of AM Ellison
 x <- read.csv('http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-12-ne-ants-1864-2011.csv')
@@ -60,5 +62,4 @@ ne.map <- qmap(location='new england',zoom=6)
 pdf('NE_arudis_map.pdf')
 ne.map + geom_point(data=ants,aes(x=longitude,y=latitude),col='violet',size=0.5)
 dev.off()
-
 

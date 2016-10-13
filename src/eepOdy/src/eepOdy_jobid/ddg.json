@@ -1,0 +1,1215 @@
+{
+
+"prefix" : {
+"prov" : "http://www.w3.org/ns/prov#",
+"rdt" : "http://rdatatracker.org/"
+},
+"activity":{
+
+"p1" : {
+"rdt:name" : "eepOdy.R",
+"rdt:type" : "Start",
+"rdt:elapsedTime" : "25.872",
+"rdt:scriptNum" : "NA",
+"rdt:startLine" : "NA",
+"rdt:startCol" : "NA",
+"rdt:endLine" : "NA",
+"rdt:endCol" : "NA"
+} ,
+
+"p2" : {
+"rdt:name" : "if (!\"ggmap\" %in% installed.packages()[, 1]) {    install.pa",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "25.877",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "2",
+"rdt:startCol" : "1",
+"rdt:endLine" : "2",
+"rdt:endCol" : "70"
+} ,
+
+"p3" : {
+"rdt:name" : "library(ggmap)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "25.894",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "3",
+"rdt:startCol" : "1",
+"rdt:endLine" : "3",
+"rdt:endCol" : "14"
+} ,
+
+"p4" : {
+"rdt:name" : "x <- read.csv(\"http://harvardforest.fas.harvard.edu/data/p14",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.306",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "6",
+"rdt:startCol" : "1",
+"rdt:endLine" : "6",
+"rdt:endCol" : "99"
+} ,
+
+"p5" : {
+"rdt:name" : "sites <- read.csv(\"http://harvardforest.fas.harvard.edu/data",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.35",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "7",
+"rdt:startCol" : "1",
+"rdt:endLine" : "7",
+"rdt:endCol" : "105"
+} ,
+
+"p6" : {
+"rdt:name" : "nant.sites <- read.csv(\"http://harvardforest.fas.harvard.edu",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.382",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "8",
+"rdt:startCol" : "1",
+"rdt:endLine" : "8",
+"rdt:endCol" : "114"
+} ,
+
+"p7" : {
+"rdt:name" : "x[, \"county\"] <- as.character(x[, \"county\"])",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.42",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "9",
+"rdt:startCol" : "1",
+"rdt:endLine" : "9",
+"rdt:endCol" : "42"
+} ,
+
+"p8" : {
+"rdt:name" : "x[, \"locality\"] <- as.character(x[, \"locality\"])",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.455",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "10",
+"rdt:startCol" : "1",
+"rdt:endLine" : "10",
+"rdt:endCol" : "46"
+} ,
+
+"p9" : {
+"rdt:name" : "x <- x[grepl(\"aphrud\", as.character(x[, \"code\"])), ]",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.508",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "12",
+"rdt:startCol" : "1",
+"rdt:endLine" : "12",
+"rdt:endCol" : "49"
+} ,
+
+"p10" : {
+"rdt:name" : "nant.sites[, \"site\"] <- as.character(nant.sites[, \"site\"])",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.548",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "15",
+"rdt:startCol" : "1",
+"rdt:endLine" : "15",
+"rdt:endCol" : "56"
+} ,
+
+"p11" : {
+"rdt:name" : "nant <- (x[grepl(\"nant\", as.character(x[, \"county\"])), ])",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.572",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "16",
+"rdt:startCol" : "1",
+"rdt:endLine" : "16",
+"rdt:endCol" : "54"
+} ,
+
+"p12" : {
+"rdt:name" : "nant[nant[, \"locality\"] == \"NorwoodFarm\", \"locality\"] <- \"No",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.611",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "17",
+"rdt:startCol" : "1",
+"rdt:endLine" : "17",
+"rdt:endCol" : "69"
+} ,
+
+"p13" : {
+"rdt:name" : "nant[nant[, \"locality\"] == \"Madequecham\", \"locality\"] <- \"Ma",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.632",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "18",
+"rdt:startCol" : "1",
+"rdt:endLine" : "18",
+"rdt:endCol" : "68"
+} ,
+
+"p14" : {
+"rdt:name" : "for (loc in unique(nant[, \"locality\"])) {    nant[nant[, \"lo",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.67",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "19",
+"rdt:startCol" : "1",
+"rdt:endLine" : "22",
+"rdt:endCol" : "1"
+} ,
+
+"p15" : {
+"rdt:name" : "duke <- (x[grepl(\"dukes\", as.character(x[, \"county\"])), ])",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.799",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "24",
+"rdt:startCol" : "1",
+"rdt:endLine" : "24",
+"rdt:endCol" : "55"
+} ,
+
+"p16" : {
+"rdt:name" : "duke[is.na(duke[, \"latitude\"]), \"longitude\"] <- 70.8",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.837",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "25",
+"rdt:startCol" : "1",
+"rdt:endLine" : "25",
+"rdt:endCol" : "50"
+} ,
+
+"p17" : {
+"rdt:name" : "duke[is.na(duke[, \"latitude\"]), \"latitude\"] <- 41.32",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.856",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "26",
+"rdt:startCol" : "1",
+"rdt:endLine" : "26",
+"rdt:endCol" : "50"
+} ,
+
+"p18" : {
+"rdt:name" : "include <- (grepl(\"connect\", x[, \"state\"]) | grepl(\"rhode\", ",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.878",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "29",
+"rdt:startCol" : "1",
+"rdt:endLine" : "31",
+"rdt:endCol" : "13"
+} ,
+
+"p19" : {
+"rdt:name" : "ants <- x[include, ]",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.914",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "32",
+"rdt:startCol" : "1",
+"rdt:endLine" : "32",
+"rdt:endCol" : "19"
+} ,
+
+"p20" : {
+"rdt:name" : "ants <- rbind(ants, duke, nant)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "26.963",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "34",
+"rdt:startCol" : "1",
+"rdt:endLine" : "34",
+"rdt:endCol" : "29"
+} ,
+
+"p21" : {
+"rdt:name" : "ME <- x[x[, \"state\"] == \"maine\", ]",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.02",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "36",
+"rdt:startCol" : "1",
+"rdt:endLine" : "36",
+"rdt:endCol" : "32"
+} ,
+
+"p22" : {
+"rdt:name" : "ME <- ME[grepl(\"waterboro barrens\", ME[, \"locality\"], ign = ",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.06",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "37",
+"rdt:startCol" : "1",
+"rdt:endLine" : "37",
+"rdt:endCol" : "62"
+} ,
+
+"p23" : {
+"rdt:name" : "ants <- ants[ants[, \"state\"] != \"maine\", ]",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.089",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "39",
+"rdt:startCol" : "1",
+"rdt:endLine" : "39",
+"rdt:endCol" : "40"
+} ,
+
+"p24" : {
+"rdt:name" : "ants <- rbind(ants, ME)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.127",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "40",
+"rdt:startCol" : "1",
+"rdt:endLine" : "40",
+"rdt:endCol" : "22"
+} ,
+
+"p25" : {
+"rdt:name" : "missing <- ants[is.na(ants[, \"latitude\"]), ]",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.172",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "42",
+"rdt:startCol" : "1",
+"rdt:endLine" : "42",
+"rdt:endCol" : "42"
+} ,
+
+"p26" : {
+"rdt:name" : "missing[(missing[, \"county\"] == \"litchfield\" & missing[, \"lo",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.21",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "43",
+"rdt:startCol" : "1",
+"rdt:endLine" : "45",
+"rdt:endCol" : "58"
+} ,
+
+"p27" : {
+"rdt:name" : "missing[(missing[, \"county\"] == \"litchfield\" & !(missing[, \"",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.236",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "46",
+"rdt:startCol" : "1",
+"rdt:endLine" : "48",
+"rdt:endCol" : "60"
+} ,
+
+"p28" : {
+"rdt:name" : "missing[grepl(\"willimantic\", missing[, \"locality\"], ign = TR",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.262",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "49",
+"rdt:startCol" : "1",
+"rdt:endLine" : "50",
+"rdt:endCol" : "52"
+} ,
+
+"p29" : {
+"rdt:name" : "missing[grepl(\"new haven\", missing[, \"county\"], ign = TRUE),",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.287",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "51",
+"rdt:startCol" : "1",
+"rdt:endLine" : "52",
+"rdt:endCol" : "63"
+} ,
+
+"p30" : {
+"rdt:name" : "missing[grepl(\"block island\", missing[, \"locality\"], ign = T",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.319",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "53",
+"rdt:startCol" : "1",
+"rdt:endLine" : "54",
+"rdt:endCol" : "63"
+} ,
+
+"p31" : {
+"rdt:name" : "ants <- ants[!(is.na(ants[, \"latitude\"])), ]",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.344",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "56",
+"rdt:startCol" : "1",
+"rdt:endLine" : "56",
+"rdt:endCol" : "42"
+} ,
+
+"p32" : {
+"rdt:name" : "ants <- rbind(ants, missing)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "27.385",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "57",
+"rdt:startCol" : "1",
+"rdt:endLine" : "57",
+"rdt:endCol" : "27"
+} ,
+
+"p33" : {
+"rdt:name" : "ne.map <- qmap(location = \"new england\", zoom = 6)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "29.036",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "60",
+"rdt:startCol" : "1",
+"rdt:endLine" : "60",
+"rdt:endCol" : "45"
+} ,
+
+"p34" : {
+"rdt:name" : "pdf(\"NE_arudis_map.pdf\")",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "40.268",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "62",
+"rdt:startCol" : "1",
+"rdt:endLine" : "62",
+"rdt:endCol" : "24"
+} ,
+
+"p35" : {
+"rdt:name" : "ne.map + geom_point(data = ants, aes(x = longitude, y = lati",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "40.278",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "63",
+"rdt:startCol" : "1",
+"rdt:endLine" : "63",
+"rdt:endCol" : "80"
+} ,
+
+"p36" : {
+"rdt:name" : "dev.off()",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "40.315",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "64",
+"rdt:startCol" : "1",
+"rdt:endLine" : "64",
+"rdt:endCol" : "9"
+} ,
+
+"p37" : {
+"rdt:name" : "eepOdy.R",
+"rdt:type" : "Finish",
+"rdt:elapsedTime" : "40.33",
+"rdt:scriptNum" : "NA",
+"rdt:startLine" : "NA",
+"rdt:startCol" : "NA",
+"rdt:endLine" : "NA",
+"rdt:endCol" : "NA"
+} ,
+
+"environment" : {
+"rdt:name" : "environment",
+"rdt:architecture" : "x86_64",
+"rdt:operatingSystem" : "unix",
+"rdt:language" : "R",
+"rdt:rVersion" : "R version 3.3.1 (2016-06-21)",
+"rdt:script" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/src/eepOdy/src/eepOdy.R",
+"rdt:sourcedScripts" : ""
+,
+"rdt:scriptTimeStamp" : "2016-10-13T15.28.44EDT",
+"rdt:workingDirectory" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/src/eepOdy/src",
+"rdt:ddgDirectory" : "eepOdy_jobid",
+"rdt:ddgTimeStamp" : "2016-10-13T15.34.00EDT",
+"rdt:rdatatrackerVersion" : "2.24.1",
+"rdt:InstalledPackages": [
+	{"package":"devtools", "version":"1.12.0"},
+	{"package":"ggmap", "version":"2.6.1"},
+	{"package":"ggplot2", "version":"2.1.0"},
+	{"package":"RDataTracker", "version":"2.24.1"}]
+}},
+"entity":{
+
+"d1" : {
+"rdt:name" : "http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-12-ne-ants-1864-2011.csv",
+"rdt:value" : "\"http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-12-ne-ants-1864-2011.csv\"",
+"rdt:type" : "URL",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d2" : {
+"rdt:name" : "x",
+"rdt:value" : "eepOdy_jobid/data/2-x-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d3" : {
+"rdt:name" : "http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-07-ant-sites-1999-2000.csv",
+"rdt:value" : "\"http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-07-ant-sites-1999-2000.csv\"",
+"rdt:type" : "URL",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d4" : {
+"rdt:name" : "sites",
+"rdt:value" : "eepOdy_jobid/data/4-sites.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d5" : {
+"rdt:name" : "http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-09-nantucket-sites-2004-09.csv",
+"rdt:value" : "\"http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-09-nantucket-sites-2004-09.csv\"",
+"rdt:type" : "URL",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d6" : {
+"rdt:name" : "nant.sites",
+"rdt:value" : "eepOdy_jobid/data/6-nant.sites.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d7" : {
+"rdt:name" : "x",
+"rdt:value" : "eepOdy_jobid/data/7-x-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d8" : {
+"rdt:name" : "x",
+"rdt:value" : "eepOdy_jobid/data/8-x-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d9" : {
+"rdt:name" : "x",
+"rdt:value" : "eepOdy_jobid/data/9-x-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d10" : {
+"rdt:name" : "nant.sites",
+"rdt:value" : "eepOdy_jobid/data/10-nant.sites.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d11" : {
+"rdt:name" : "nant",
+"rdt:value" : "eepOdy_jobid/data/11-nant-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d12" : {
+"rdt:name" : "nant",
+"rdt:value" : "eepOdy_jobid/data/12-nant-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d13" : {
+"rdt:name" : "nant",
+"rdt:value" : "eepOdy_jobid/data/13-nant-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d14" : {
+"rdt:name" : "loc [ENV]",
+"rdt:value" : "\"MuskegetIslandWest\"",
+"rdt:type" : "Data",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "TRUE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d15" : {
+"rdt:name" : "nant",
+"rdt:value" : "eepOdy_jobid/data/15-nant-PARTIAL.txt",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d16" : {
+"rdt:name" : "duke",
+"rdt:value" : "eepOdy_jobid/data/16-duke-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d17" : {
+"rdt:name" : "duke",
+"rdt:value" : "eepOdy_jobid/data/17-duke-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d18" : {
+"rdt:name" : "duke",
+"rdt:value" : "eepOdy_jobid/data/18-duke-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d19" : {
+"rdt:name" : "include",
+"rdt:value" : "eepOdy_jobid/data/19-include.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d20" : {
+"rdt:name" : "ants",
+"rdt:value" : "eepOdy_jobid/data/20-ants-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d21" : {
+"rdt:name" : "ants",
+"rdt:value" : "eepOdy_jobid/data/21-ants-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d22" : {
+"rdt:name" : "ME",
+"rdt:value" : "eepOdy_jobid/data/22-ME-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d23" : {
+"rdt:name" : "ME",
+"rdt:value" : "eepOdy_jobid/data/23-ME-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d24" : {
+"rdt:name" : "ants",
+"rdt:value" : "eepOdy_jobid/data/24-ants-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d25" : {
+"rdt:name" : "ants",
+"rdt:value" : "eepOdy_jobid/data/25-ants-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d26" : {
+"rdt:name" : "missing",
+"rdt:value" : "eepOdy_jobid/data/26-missing-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d27" : {
+"rdt:name" : "missing",
+"rdt:value" : "eepOdy_jobid/data/27-missing-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d28" : {
+"rdt:name" : "missing",
+"rdt:value" : "eepOdy_jobid/data/28-missing-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d29" : {
+"rdt:name" : "missing",
+"rdt:value" : "eepOdy_jobid/data/29-missing-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d30" : {
+"rdt:name" : "missing",
+"rdt:value" : "eepOdy_jobid/data/30-missing-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d31" : {
+"rdt:name" : "missing",
+"rdt:value" : "eepOdy_jobid/data/31-missing-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d32" : {
+"rdt:name" : "ants",
+"rdt:value" : "eepOdy_jobid/data/32-ants-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d33" : {
+"rdt:name" : "ants",
+"rdt:value" : "eepOdy_jobid/data/33-ants-PARTIAL.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d34" : {
+"rdt:name" : "ne.map",
+"rdt:value" : "eepOdy_jobid/data/34-ne.map.txt",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d35" : {
+"rdt:name" : "NE_arudis_map.pdf",
+"rdt:value" : "eepOdy_jobid/data/35-NE_arudis_map.pdf",
+"rdt:type" : "File",
+"rdt:scope" : "undefined",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+}},
+"wasInformedBy":{
+
+"e1" : {
+"prov:informant" : "p1",
+"prov:informed" : "p2"
+} ,
+
+"e2" : {
+"prov:informant" : "p2",
+"prov:informed" : "p3"
+} ,
+
+"e3" : {
+"prov:informant" : "p3",
+"prov:informed" : "p4"
+} ,
+
+"e6" : {
+"prov:informant" : "p4",
+"prov:informed" : "p5"
+} ,
+
+"e9" : {
+"prov:informant" : "p5",
+"prov:informed" : "p6"
+} ,
+
+"e12" : {
+"prov:informant" : "p6",
+"prov:informed" : "p7"
+} ,
+
+"e14" : {
+"prov:informant" : "p7",
+"prov:informed" : "p8"
+} ,
+
+"e16" : {
+"prov:informant" : "p8",
+"prov:informed" : "p9"
+} ,
+
+"e18" : {
+"prov:informant" : "p9",
+"prov:informed" : "p10"
+} ,
+
+"e20" : {
+"prov:informant" : "p10",
+"prov:informed" : "p11"
+} ,
+
+"e23" : {
+"prov:informant" : "p11",
+"prov:informed" : "p12"
+} ,
+
+"e25" : {
+"prov:informant" : "p12",
+"prov:informed" : "p13"
+} ,
+
+"e27" : {
+"prov:informant" : "p13",
+"prov:informed" : "p14"
+} ,
+
+"e31" : {
+"prov:informant" : "p14",
+"prov:informed" : "p15"
+} ,
+
+"e34" : {
+"prov:informant" : "p15",
+"prov:informed" : "p16"
+} ,
+
+"e36" : {
+"prov:informant" : "p16",
+"prov:informed" : "p17"
+} ,
+
+"e38" : {
+"prov:informant" : "p17",
+"prov:informed" : "p18"
+} ,
+
+"e41" : {
+"prov:informant" : "p18",
+"prov:informed" : "p19"
+} ,
+
+"e45" : {
+"prov:informant" : "p19",
+"prov:informed" : "p20"
+} ,
+
+"e49" : {
+"prov:informant" : "p20",
+"prov:informed" : "p21"
+} ,
+
+"e52" : {
+"prov:informant" : "p21",
+"prov:informed" : "p22"
+} ,
+
+"e54" : {
+"prov:informant" : "p22",
+"prov:informed" : "p23"
+} ,
+
+"e56" : {
+"prov:informant" : "p23",
+"prov:informed" : "p24"
+} ,
+
+"e59" : {
+"prov:informant" : "p24",
+"prov:informed" : "p25"
+} ,
+
+"e62" : {
+"prov:informant" : "p25",
+"prov:informed" : "p26"
+} ,
+
+"e64" : {
+"prov:informant" : "p26",
+"prov:informed" : "p27"
+} ,
+
+"e66" : {
+"prov:informant" : "p27",
+"prov:informed" : "p28"
+} ,
+
+"e68" : {
+"prov:informant" : "p28",
+"prov:informed" : "p29"
+} ,
+
+"e70" : {
+"prov:informant" : "p29",
+"prov:informed" : "p30"
+} ,
+
+"e72" : {
+"prov:informant" : "p30",
+"prov:informed" : "p31"
+} ,
+
+"e74" : {
+"prov:informant" : "p31",
+"prov:informed" : "p32"
+} ,
+
+"e77" : {
+"prov:informant" : "p32",
+"prov:informed" : "p33"
+} ,
+
+"e79" : {
+"prov:informant" : "p33",
+"prov:informed" : "p34"
+} ,
+
+"e80" : {
+"prov:informant" : "p34",
+"prov:informed" : "p35"
+} ,
+
+"e83" : {
+"prov:informant" : "p35",
+"prov:informed" : "p36"
+} ,
+
+"e85" : {
+"prov:informant" : "p36",
+"prov:informed" : "p37"
+}},
+"wasGeneratedBy":{
+
+"e5" : {
+"prov:entity" : "d2",
+"prov:activity" : "p4"
+} ,
+
+"e8" : {
+"prov:entity" : "d4",
+"prov:activity" : "p5"
+} ,
+
+"e11" : {
+"prov:entity" : "d6",
+"prov:activity" : "p6"
+} ,
+
+"e13" : {
+"prov:entity" : "d7",
+"prov:activity" : "p7"
+} ,
+
+"e15" : {
+"prov:entity" : "d8",
+"prov:activity" : "p8"
+} ,
+
+"e17" : {
+"prov:entity" : "d9",
+"prov:activity" : "p9"
+} ,
+
+"e19" : {
+"prov:entity" : "d10",
+"prov:activity" : "p10"
+} ,
+
+"e22" : {
+"prov:entity" : "d11",
+"prov:activity" : "p11"
+} ,
+
+"e24" : {
+"prov:entity" : "d12",
+"prov:activity" : "p12"
+} ,
+
+"e26" : {
+"prov:entity" : "d13",
+"prov:activity" : "p13"
+} ,
+
+"e30" : {
+"prov:entity" : "d15",
+"prov:activity" : "p14"
+} ,
+
+"e33" : {
+"prov:entity" : "d16",
+"prov:activity" : "p15"
+} ,
+
+"e35" : {
+"prov:entity" : "d17",
+"prov:activity" : "p16"
+} ,
+
+"e37" : {
+"prov:entity" : "d18",
+"prov:activity" : "p17"
+} ,
+
+"e40" : {
+"prov:entity" : "d19",
+"prov:activity" : "p18"
+} ,
+
+"e44" : {
+"prov:entity" : "d20",
+"prov:activity" : "p19"
+} ,
+
+"e48" : {
+"prov:entity" : "d21",
+"prov:activity" : "p20"
+} ,
+
+"e51" : {
+"prov:entity" : "d22",
+"prov:activity" : "p21"
+} ,
+
+"e53" : {
+"prov:entity" : "d23",
+"prov:activity" : "p22"
+} ,
+
+"e55" : {
+"prov:entity" : "d24",
+"prov:activity" : "p23"
+} ,
+
+"e58" : {
+"prov:entity" : "d25",
+"prov:activity" : "p24"
+} ,
+
+"e61" : {
+"prov:entity" : "d26",
+"prov:activity" : "p25"
+} ,
+
+"e63" : {
+"prov:entity" : "d27",
+"prov:activity" : "p26"
+} ,
+
+"e65" : {
+"prov:entity" : "d28",
+"prov:activity" : "p27"
+} ,
+
+"e67" : {
+"prov:entity" : "d29",
+"prov:activity" : "p28"
+} ,
+
+"e69" : {
+"prov:entity" : "d30",
+"prov:activity" : "p29"
+} ,
+
+"e71" : {
+"prov:entity" : "d31",
+"prov:activity" : "p30"
+} ,
+
+"e73" : {
+"prov:entity" : "d32",
+"prov:activity" : "p31"
+} ,
+
+"e76" : {
+"prov:entity" : "d33",
+"prov:activity" : "p32"
+} ,
+
+"e78" : {
+"prov:entity" : "d34",
+"prov:activity" : "p33"
+} ,
+
+"e84" : {
+"prov:entity" : "d35",
+"prov:activity" : "p36"
+}},
+"used":{
+
+"e4" : {
+"prov:activity" : "p4",
+"prov:entity" : "d1"
+} ,
+
+"e7" : {
+"prov:activity" : "p5",
+"prov:entity" : "d3"
+} ,
+
+"e10" : {
+"prov:activity" : "p6",
+"prov:entity" : "d5"
+} ,
+
+"e21" : {
+"prov:activity" : "p11",
+"prov:entity" : "d9"
+} ,
+
+"e28" : {
+"prov:activity" : "p14",
+"prov:entity" : "d14"
+} ,
+
+"e29" : {
+"prov:activity" : "p14",
+"prov:entity" : "d10"
+} ,
+
+"e32" : {
+"prov:activity" : "p15",
+"prov:entity" : "d9"
+} ,
+
+"e39" : {
+"prov:activity" : "p18",
+"prov:entity" : "d9"
+} ,
+
+"e42" : {
+"prov:activity" : "p19",
+"prov:entity" : "d9"
+} ,
+
+"e43" : {
+"prov:activity" : "p19",
+"prov:entity" : "d19"
+} ,
+
+"e46" : {
+"prov:activity" : "p20",
+"prov:entity" : "d18"
+} ,
+
+"e47" : {
+"prov:activity" : "p20",
+"prov:entity" : "d15"
+} ,
+
+"e50" : {
+"prov:activity" : "p21",
+"prov:entity" : "d9"
+} ,
+
+"e57" : {
+"prov:activity" : "p24",
+"prov:entity" : "d23"
+} ,
+
+"e60" : {
+"prov:activity" : "p25",
+"prov:entity" : "d25"
+} ,
+
+"e75" : {
+"prov:activity" : "p32",
+"prov:entity" : "d31"
+} ,
+
+"e81" : {
+"prov:activity" : "p35",
+"prov:entity" : "d34"
+} ,
+
+"e82" : {
+"prov:activity" : "p35",
+"prov:entity" : "d33"
+}}
+}
