@@ -1,0 +1,5 @@
+"ddg.type","ddg.num","ddg.name","ddg.value","ddg.return.linked","ddg.auto.created","ddg.time","ddg.snum","ddg.lnum"
+"Start",1,"eepOdy.R","eepOdy.R",FALSE,FALSE,0.0550000000000002,0,NA
+"Operation",2,"if (!""ggmap"" %in% installed.packages()[, 1]) {    install.pa","if (!""ggmap"" %in% installed.packages()[, 1]) {    install.pa",FALSE,FALSE,0.114,0,"2"
+"Operation",3,"library(ggmap)","library(ggmap)",FALSE,FALSE,0.874,0,"3"
+"Operation",4,"tryCatch","tryCatch",FALSE,FALSE,0.909,0,"6"

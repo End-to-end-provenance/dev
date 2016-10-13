@@ -1,0 +1,41 @@
+"site","habitat","treatment","pitfalltrap","latitude","longitude","utm.lon","utm.lat","masl"
+"HB03","ScrubOakShrubland","Burned 2003","2",41.2813,-70.0311,413649.48,4570494.41,14
+"HM02","ScrubOakShrubland","Mowed 2002 and 2004","1",41.2739,-70.0264,414033.38,4569669.33,15
+"Mowed-D","ScrubOak/Heathland Mix","Mowed annually since 1996","D",41.2644,-70.0201,414549.44,4568605.11,18
+"Mowed-E","ScrubOak/Heathland Mix","Mowed annually since 1996","E",41.2643,-70.0199,414570.36,4568602.64,18
+"Mowed-F","ScrubOak/Heathland Mix","Mowed annually since 1996","F",41.2643,-70.0196,414590.46,4568602.41,18
+"RAM-5","Sandplain grassland","Burned periodically","5",41.2586,-70.1614,402706.36,4568115.43,6
+"RAM-A","Sandplain grassland","Burned periodically","A",41.2584,-70.1613,402711.96,4568095.37,6
+"RAM-B","Sandplain grassland","Burned periodically","B",41.2598,-70.1567,403101.8,4568237.84,6
+"RAM-C","Sandplain grassland","Burned periodically","C",41.2574,-70.1645,402444.9,4567987.91,5
+"SMOOTHHUMMOCKS","Coastal Heathland/Sandplain Grassland","Burned 2004","4",41.2488,-70.1217,406022.34,4566983.69,5
+"SO Thicket-A","ScrubOakShrubland","none","A",41.2621,-70.0211,414466.12,4568358.49,18
+"SO Thicket-B","ScrubOakShrubland","none","B",41.262,-70.0212,414460.03,4568339.68,18
+"SO Thicket-C","ScrubOakShrubland","none","C",41.262,-70.0215,414430.8,4568347.8,18
+"SQUAMSWAMP","Red Maple/Tupelo Swamp edge","none","3",41.3198,-70.0036,416006.97,4574748.2,6
+"STATEFOREST","Pitch pine/white pine forest","none","6",41.2583,-70.0813,409414.53,4567992.16,12
+"TuckernuckIsland","MixedDeciduousForest","none","7",41.3038,-70.261,394438.01,4573246.37,7
+"TuckernuckIsland","MaritimeBeachDune","none","8",41.3044,-70.2712,393578.78,4573324.31,4
+"Norwood Farm","Sandplain grassland","Recreated",NA,41.288,-70.0214,414473.09,4571230.82,4
+"Norwood Farm","ScrubOak/Grassland Mix","Mowed",NA,41.2867,-70.0246,414200.92,4571089.68,4
+"Norwood Farm","ScrubOak/Heathland Mix","Mowed",NA,41.2854,-70.0141,415081.06,4570940.55,4
+"Taupshwa","Bog","none",NA,41.278,-70.0507,412009.57,4570153.22,6
+"Taupshwa","Heathland","none",NA,41.278,-70.0507,412009.57,4570153.22,6
+"Donut","Bog","none",NA,41.2791,-70.0345,413365.17,4570252.41,7
+"Donut","Heathland","none",NA,41.2791,-70.0345,413365.17,4570252.41,7
+"Sesachacha","Sandplain grassland","Burned",NA,41.276,-69.9894,417139.1,4569864.22,16
+"Sesachacha","Heathland","Burned",NA,41.276,-69.9894,417139.1,4569864.22,16
+"Sesachacha","ScrubOakShrubland","none",NA,41.2835,-69.9777,418128.39,4570687.97,34
+"Coskata-Catue","MaritimeJuniperWoodland","none",NA,41.3601,-70.0155,415060.79,4579227.2,7
+"Coskata-Catue","MaritimeBeachDune","none",NA,41.3567,-70.0138,415199.4,4578846.95,5
+"Coskata-Catue","SaltMarshBerm","none",NA,41.3567,-70.0138,415199.4,4578846.95,5
+"MAS-NBI","Heathland","Burned","1",41.2751,-69.9878,417270.61,4569768.24,6
+"Eel Point 2","MaritimeBeachDune","none","2",41.2937,-70.1954,399909.4,4572049.62,1
+"Madequechum","PineHeathBarren","none","3",41.2544,-70.0485,412155.18,4567533.07,11
+"MAS-NBI","Sandplain grassland","none","4",41.2761,-69.9887,417194.73,4569879.91,19
+"MuskegetIslandEast","MaritimeJuniperWoodland","none","5",41.335,-70.2941,391712.44,4576750.62,0
+"MuskegetIslandWest","MaritimeBeachDune","none","6",41.3362,-70.3071,390626.77,4576902.38,0
+"SandfordFarmRoad","Sandplain grassland","none","7",41.2721,-70.1407,404460.98,4569589.61,2
+"SheepPond","ScrubOakShrubland","none","9",41.2659,-70.1773,401382.43,4568945.83,6
+"AmeliaDrive","Residential","none","10",41.2664,-70.0858,409050.99,4568898.19,5
+"TuckernuckIslandWest","Sandplain grassland","none","11",41.3049,-70.2679,393858.04,4573376.74,2

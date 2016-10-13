@@ -1,0 +1,171 @@
+Architecture="x86_64"
+OperatingSystem="unix"
+Language="R"
+LanguageVersion="R version 3.3.0 (2016-05-03)"
+RDataTrackerVersion="2.24.1"
+Script="/n/regal/ellison_lab/mklau/dev/src/eepOdy/src/eepOdy.R"
+SourcedScripts=""
+ProcessFileTimestamp="2016-10-13T16.19.00EDT"
+WorkingDirectory="/n/regal/ellison_lab/mklau/dev/src/eepOdy/src"
+DDGDirectory="eepOdy_999999"
+DateTime="2016-10-13T16.30.19EDT"
+InstalledPackages="devtools 1.12.0, ggmap 2.6.1, ggplot2 2.1.0, RDataTracker 2.24.1"
+37
+Start p1 "1-eepOdy.R" Value="eepOdy.R" Time="0.0720000000000001" Script="0" Line="NA";
+Operation p2 "2-if (!\"ggmap\" %in% installed.packages()[, 1]) {    install.pa" Value="if (!\"ggmap\" %in% installed.packages()[, 1]) {    install.pa" Time="0.0840000000000001" Script="0" Line="2";
+CF p1 p2
+Operation p3 "3-library(ggmap)" Value="library(ggmap)" Time="1.066" Script="0" Line="3";
+CF p2 p3
+Operation p4 "4-x <- read.csv(\"http://harvardforest.fas.harvard.edu/data/p14" Value="x <- read.csv(\"http://harvardforest.fas.harvard.edu/data/p14" Time="1.626" Script="0" Line="6";
+CF p3 p4
+URL d1 "1-http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-12-ne-ants-1864-2011.csv" Value="\"http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-12-ne-ants-1864-2011.csv\"";
+DF d1 p4
+Snapshot d2 "2-x" Value="eepOdy_999999/data/2-x-PARTIAL.csv" Time="2016-10-13T16.30.27EDT";
+DF p4 d2
+Operation p5 "5-sites <- read.csv(\"http://harvardforest.fas.harvard.edu/data" Value="sites <- read.csv(\"http://harvardforest.fas.harvard.edu/data" Time="1.696" Script="0" Line="7";
+CF p4 p5
+URL d3 "3-http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-07-ant-sites-1999-2000.csv" Value="\"http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-07-ant-sites-1999-2000.csv\"";
+DF d3 p5
+Snapshot d4 "4-sites" Value="eepOdy_999999/data/4-sites.csv" Time="2016-10-13T16.30.27EDT";
+DF p5 d4
+Operation p6 "6-nant.sites <- read.csv(\"http://harvardforest.fas.harvard.edu" Value="nant.sites <- read.csv(\"http://harvardforest.fas.harvard.edu" Time="1.749" Script="0" Line="8";
+CF p5 p6
+URL d5 "5-http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-09-nantucket-sites-2004-09.csv" Value="\"http://harvardforest.fas.harvard.edu/data/p14/hf147/hf147-09-nantucket-sites-2004-09.csv\"";
+DF d5 p6
+Snapshot d6 "6-nant.sites" Value="eepOdy_999999/data/6-nant.sites.csv" Time="2016-10-13T16.30.27EDT";
+DF p6 d6
+Operation p7 "7-x[, \"county\"] <- as.character(x[, \"county\"])" Value="x[, \"county\"] <- as.character(x[, \"county\"])" Time="1.802" Script="0" Line="9";
+CF p6 p7
+Snapshot d7 "7-x" Value="eepOdy_999999/data/7-x-PARTIAL.csv" Time="2016-10-13T16.30.27EDT";
+DF p7 d7
+Operation p8 "8-x[, \"locality\"] <- as.character(x[, \"locality\"])" Value="x[, \"locality\"] <- as.character(x[, \"locality\"])" Time="1.85" Script="0" Line="10";
+CF p7 p8
+Snapshot d8 "8-x" Value="eepOdy_999999/data/8-x-PARTIAL.csv" Time="2016-10-13T16.30.28EDT";
+DF p8 d8
+Operation p9 "9-x <- x[grepl(\"aphrud\", as.character(x[, \"code\"])), ]" Value="x <- x[grepl(\"aphrud\", as.character(x[, \"code\"])), ]" Time="1.924" Script="0" Line="12";
+CF p8 p9
+Snapshot d9 "9-x" Value="eepOdy_999999/data/9-x-PARTIAL.csv" Time="2016-10-13T16.30.28EDT";
+DF p9 d9
+Operation p10 "10-nant.sites[, \"site\"] <- as.character(nant.sites[, \"site\"])" Value="nant.sites[, \"site\"] <- as.character(nant.sites[, \"site\"])" Time="1.971" Script="0" Line="15";
+CF p9 p10
+Snapshot d10 "10-nant.sites" Value="eepOdy_999999/data/10-nant.sites.csv" Time="2016-10-13T16.30.28EDT";
+DF p10 d10
+Operation p11 "11-nant <- (x[grepl(\"nant\", as.character(x[, \"county\"])), ])" Value="nant <- (x[grepl(\"nant\", as.character(x[, \"county\"])), ])" Time="2.005" Script="0" Line="16";
+CF p10 p11
+DF d9 p11
+Snapshot d11 "11-nant" Value="eepOdy_999999/data/11-nant-PARTIAL.csv" Time="2016-10-13T16.30.29EDT";
+DF p11 d11
+Operation p12 "12-nant[nant[, \"locality\"] == \"NorwoodFarm\", \"locality\"] <- \"No" Value="nant[nant[, \"locality\"] == \"NorwoodFarm\", \"locality\"] <- \"No" Time="2.053" Script="0" Line="17";
+CF p11 p12
+Snapshot d12 "12-nant" Value="eepOdy_999999/data/12-nant-PARTIAL.csv" Time="2016-10-13T16.30.31EDT";
+DF p12 d12
+Operation p13 "13-nant[nant[, \"locality\"] == \"Madequecham\", \"locality\"] <- \"Ma" Value="nant[nant[, \"locality\"] == \"Madequecham\", \"locality\"] <- \"Ma" Time="2.094" Script="0" Line="18";
+CF p12 p13
+Snapshot d13 "13-nant" Value="eepOdy_999999/data/13-nant-PARTIAL.csv" Time="2016-10-13T16.30.31EDT";
+DF p13 d13
+Operation p14 "14-for (loc in unique(nant[, \"locality\"])) {    nant[nant[, \"lo" Value="for (loc in unique(nant[, \"locality\"])) {    nant[nant[, \"lo" Time="2.16" Script="0" Line="19";
+CF p13 p14
+Data d14 "14-loc [ENV]" Value="\"MuskegetIslandWest\"";
+DF d14 p14
+DF d10 p14
+Snapshot d15 "15-nant" Value="eepOdy_999999/data/15-nant-PARTIAL.txt" Time="2016-10-13T16.30.31EDT";
+DF p14 d15
+Operation p15 "15-duke <- (x[grepl(\"dukes\", as.character(x[, \"county\"])), ])" Value="duke <- (x[grepl(\"dukes\", as.character(x[, \"county\"])), ])" Time="2.266" Script="0" Line="24";
+CF p14 p15
+DF d9 p15
+Snapshot d16 "16-duke" Value="eepOdy_999999/data/16-duke-PARTIAL.csv" Time="2016-10-13T16.30.31EDT";
+DF p15 d16
+Operation p16 "16-duke[is.na(duke[, \"latitude\"]), \"longitude\"] <- 70.8" Value="duke[is.na(duke[, \"latitude\"]), \"longitude\"] <- 70.8" Time="2.314" Script="0" Line="25";
+CF p15 p16
+Snapshot d17 "17-duke" Value="eepOdy_999999/data/17-duke-PARTIAL.csv" Time="2016-10-13T16.30.31EDT";
+DF p16 d17
+Operation p17 "17-duke[is.na(duke[, \"latitude\"]), \"latitude\"] <- 41.32" Value="duke[is.na(duke[, \"latitude\"]), \"latitude\"] <- 41.32" Time="2.344" Script="0" Line="26";
+CF p16 p17
+Snapshot d18 "18-duke" Value="eepOdy_999999/data/18-duke-PARTIAL.csv" Time="2016-10-13T16.30.31EDT";
+DF p17 d18
+Operation p18 "18-include <- (grepl(\"connect\", x[, \"state\"]) | grepl(\"rhode\", " Value="include <- (grepl(\"connect\", x[, \"state\"]) | grepl(\"rhode\", " Time="2.377" Script="0" Line="29";
+CF p17 p18
+DF d9 p18
+Snapshot d19 "19-include" Value="eepOdy_999999/data/19-include.csv" Time="2016-10-13T16.30.31EDT";
+DF p18 d19
+Operation p19 "19-ants <- x[include, ]" Value="ants <- x[include, ]" Time="2.418" Script="0" Line="32";
+CF p18 p19
+DF d9 p19
+DF d19 p19
+Snapshot d20 "20-ants" Value="eepOdy_999999/data/20-ants-PARTIAL.csv" Time="2016-10-13T16.30.32EDT";
+DF p19 d20
+Operation p20 "20-ants <- rbind(ants, duke, nant)" Value="ants <- rbind(ants, duke, nant)" Time="2.478" Script="0" Line="34";
+CF p19 p20
+DF d18 p20
+DF d15 p20
+Snapshot d21 "21-ants" Value="eepOdy_999999/data/21-ants-PARTIAL.csv" Time="2016-10-13T16.30.32EDT";
+DF p20 d21
+Operation p21 "21-ME <- x[x[, \"state\"] == \"maine\", ]" Value="ME <- x[x[, \"state\"] == \"maine\", ]" Time="2.546" Script="0" Line="36";
+CF p20 p21
+DF d9 p21
+Snapshot d22 "22-ME" Value="eepOdy_999999/data/22-ME-PARTIAL.csv" Time="2016-10-13T16.30.33EDT";
+DF p21 d22
+Operation p22 "22-ME <- ME[grepl(\"waterboro barrens\", ME[, \"locality\"], ign = " Value="ME <- ME[grepl(\"waterboro barrens\", ME[, \"locality\"], ign = " Time="2.606" Script="0" Line="37";
+CF p21 p22
+Snapshot d23 "23-ME" Value="eepOdy_999999/data/23-ME-PARTIAL.csv" Time="2016-10-13T16.30.33EDT";
+DF p22 d23
+Operation p23 "23-ants <- ants[ants[, \"state\"] != \"maine\", ]" Value="ants <- ants[ants[, \"state\"] != \"maine\", ]" Time="2.654" Script="0" Line="39";
+CF p22 p23
+Snapshot d24 "24-ants" Value="eepOdy_999999/data/24-ants-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p23 d24
+Operation p24 "24-ants <- rbind(ants, ME)" Value="ants <- rbind(ants, ME)" Time="2.7" Script="0" Line="40";
+CF p23 p24
+DF d23 p24
+Snapshot d25 "25-ants" Value="eepOdy_999999/data/25-ants-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p24 d25
+Operation p25 "25-missing <- ants[is.na(ants[, \"latitude\"]), ]" Value="missing <- ants[is.na(ants[, \"latitude\"]), ]" Time="2.752" Script="0" Line="42";
+CF p24 p25
+DF d25 p25
+Snapshot d26 "26-missing" Value="eepOdy_999999/data/26-missing-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p25 d26
+Operation p26 "26-missing[(missing[, \"county\"] == \"litchfield\" & missing[, \"lo" Value="missing[(missing[, \"county\"] == \"litchfield\" & missing[, \"lo" Time="2.79" Script="0" Line="43";
+CF p25 p26
+Snapshot d27 "27-missing" Value="eepOdy_999999/data/27-missing-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p26 d27
+Operation p27 "27-missing[(missing[, \"county\"] == \"litchfield\" & !(missing[, \"" Value="missing[(missing[, \"county\"] == \"litchfield\" & !(missing[, \"" Time="2.834" Script="0" Line="46";
+CF p26 p27
+Snapshot d28 "28-missing" Value="eepOdy_999999/data/28-missing-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p27 d28
+Operation p28 "28-missing[grepl(\"willimantic\", missing[, \"locality\"], ign = TR" Value="missing[grepl(\"willimantic\", missing[, \"locality\"], ign = TR" Time="2.875" Script="0" Line="49";
+CF p27 p28
+Snapshot d29 "29-missing" Value="eepOdy_999999/data/29-missing-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p28 d29
+Operation p29 "29-missing[grepl(\"new haven\", missing[, \"county\"], ign = TRUE)," Value="missing[grepl(\"new haven\", missing[, \"county\"], ign = TRUE)," Time="2.914" Script="0" Line="51";
+CF p28 p29
+Snapshot d30 "30-missing" Value="eepOdy_999999/data/30-missing-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p29 d30
+Operation p30 "30-missing[grepl(\"block island\", missing[, \"locality\"], ign = T" Value="missing[grepl(\"block island\", missing[, \"locality\"], ign = T" Time="2.955" Script="0" Line="53";
+CF p29 p30
+Snapshot d31 "31-missing" Value="eepOdy_999999/data/31-missing-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p30 d31
+Operation p31 "31-ants <- ants[!(is.na(ants[, \"latitude\"])), ]" Value="ants <- ants[!(is.na(ants[, \"latitude\"])), ]" Time="2.995" Script="0" Line="56";
+CF p30 p31
+Snapshot d32 "32-ants" Value="eepOdy_999999/data/32-ants-PARTIAL.csv" Time="2016-10-13T16.30.34EDT";
+DF p31 d32
+Operation p32 "32-ants <- rbind(ants, missing)" Value="ants <- rbind(ants, missing)" Time="3.053" Script="0" Line="57";
+CF p31 p32
+DF d31 p32
+Snapshot d33 "33-ants" Value="eepOdy_999999/data/33-ants-PARTIAL.csv" Time="2016-10-13T16.30.35EDT";
+DF p32 d33
+Operation p33 "33-ne.map <- qmap(location = \"new england\", zoom = 6)" Value="ne.map <- qmap(location = \"new england\", zoom = 6)" Time="4.714" Script="0" Line="60";
+CF p32 p33
+Snapshot d34 "34-ne.map" Value="eepOdy_999999/data/34-ne.map.txt" Time="2016-10-13T16.30.43EDT";
+DF p33 d34
+Operation p34 "34-pdf(\"NE_arudis_map.pdf\")" Value="pdf(\"NE_arudis_map.pdf\")" Time="9.856" Script="0" Line="62";
+CF p33 p34
+Operation p35 "35-ne.map + geom_point(data = ants, aes(x = longitude, y = lati" Value="ne.map + geom_point(data = ants, aes(x = longitude, y = lati" Time="9.878" Script="0" Line="63";
+CF p34 p35
+DF d34 p35
+DF d33 p35
+Operation p36 "36-dev.off()" Value="dev.off()" Time="9.911" Script="0" Line="64";
+CF p35 p36
+File d35 "35-NE_arudis_map.pdf" Value="eepOdy_999999/data/35-NE_arudis_map.pdf" Time="2016-10-13T16.30.46EDT" Location="/n/regal/ellison_lab/mklau/dev/src/eepOdy/src/NE_arudis_map.pdf";
+DF p36 d35
+Finish p37 "37-eepOdy.R" Value="eepOdy.R" Time="9.95" Script="0" Line="NA";
+CF p36 p37
+

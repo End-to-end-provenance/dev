@@ -8,6 +8,5 @@
 #SBATCH -e hostname_%j.err      # File to which STDERR will be written
 #SBATCH --mail-type=ALL         # Type of email notification- BEGIN,END,FAIL,ALL
 #SBATCH --mail-user=matthewklau@fas.harvard.edu # Email to which notifications will be sent
-#SBATCH -D ~/regal/mklau/dev/src/eepOdy/src
 
-Rscript run.R $SLURM_JOBID
+Rscript run.R eepOdy.R $SLURM_JOBID
