@@ -1,0 +1,58 @@
+{
+
+"prefix" : {
+"prov" : "http://www.w3.org/ns/prov#",
+"rdt" : "http://rdatatracker.org/"
+},
+"activity":{
+
+"p1" : {
+"rdt:name" : "tryCatch",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "0.306999999999999",
+"rdt:scriptNum" : "NA",
+"rdt:startLine" : "NA",
+"rdt:startCol" : "NA",
+"rdt:endLine" : "NA",
+"rdt:endCol" : "NA"
+} ,
+
+"environment" : {
+"rdt:name" : "environment",
+"rdt:architecture" : "x86_64",
+"rdt:operatingSystem" : "unix",
+"rdt:language" : "R",
+"rdt:rVersion" : "R version 3.3.2 (2016-10-31)",
+"rdt:script" : "/Users/hermes/Desktop/ddg.bug.report/example_debug.R",
+"rdt:sourcedScripts" : ""
+,
+"rdt:scriptTimeStamp" : "2017-02-11T14.56.24EST",
+"rdt:workingDirectory" : "/Users/hermes/Desktop/ddg.bug.report",
+"rdt:ddgDirectory" : "./example_debug_ddg",
+"rdt:ddgTimeStamp" : "2017-02-13T11.11.03EST",
+"rdt:rdatatrackerVersion" : "2.25.0",
+"rdt:installedPackages" : [
+	{"package" : "RDataTracker", "version" : "2.25.0"}]
+}},
+"entity":{
+
+"d1" : {
+"rdt:name" : "error.msg",
+"rdt:value" : "\"Error in lvalue[[2]]: subscript out of bounds \"",
+"rdt:type" : "Exception",
+"rdt:scope" : "ddg.library",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+}},
+"wasInformedBy":{
+},
+"wasGeneratedBy":{
+
+"e1" : {
+"prov:entity" : "d1",
+"prov:activity" : "p1"
+}},
+"used":{
+}
+}

@@ -1,0 +1,33 @@
+Architecture="x86_64"
+OperatingSystem="unix"
+Language="R"
+LanguageVersion="R version 3.3.1 (2016-06-21)"
+RDataTrackerVersion="2.24.1"
+Script="/Users/hermes/Projects/HF/projects/Dprov/projects/dev/test_lab/bug_finding/ex108.R"
+SourcedScripts=""
+ProcessFileTimestamp="2017-01-10T10.39.43EST"
+WorkingDirectory="/Users/hermes/Projects/HF/projects/Dprov/projects/dev/test_lab/bug_finding"
+DDGDirectory="./ex108_ddg"
+DateTime="2017-01-10T10.39.51EST"
+InstalledPackages="RDataTracker 2.24.1"
+5
+Start p1 "1-ex108.R" Value="ex108.R" Time="1.58" Script="NA" Pos="NA";
+Operation p2 "2-data(mtcars)" Value="data(mtcars)" Time="1.586" Script="0" Pos="1,1,1,13";
+CF p1 p2
+Snapshot d1 "1-mtcars [ENV]" Value="data/1-mtcars.csv" Time="2017-01-10T10.39.51EST";
+DF d1 p2
+Operation p3 "3-allCars.df <- mtcars" Value="allCars.df <- mtcars" Time="1.616" Script="0" Pos="2,1,2,20";
+CF p2 p3
+DF d1 p3
+Snapshot d2 "2-allCars.df" Value="data/2-allCars.df.csv" Time="2017-01-10T10.39.51EST";
+DF p3 d2
+Operation p4 "4-mpg = allCars.df$mpg" Value="mpg = allCars.df$mpg" Time="1.642" Script="0" Pos="3,1,3,3";
+CF p3 p4
+DF d2 p4
+Snapshot d3 "3-mpg [ENV]" Value="data/3-mpg.csv" Time="2017-01-10T10.39.51EST";
+DF d3 p4
+Snapshot d4 "4-mpg" Value="data/4-mpg.csv" Time="2017-01-10T10.39.51EST";
+DF p4 d4
+Finish p5 "5-ex108.R" Value="ex108.R" Time="1.69" Script="NA" Pos="NA";
+CF p4 p5
+

@@ -1,0 +1,34 @@
+{
+
+"prefix" : {
+"prov" : "http://www.w3.org/ns/prov#",
+"rdt" : "http://rdatatracker.org/"
+},
+"activity":{
+
+"environment" : {
+"rdt:name" : "environment",
+"rdt:architecture" : "x86_64",
+"rdt:operatingSystem" : "unix",
+"rdt:language" : "R",
+"rdt:rVersion" : "R version 3.3.1 (2016-06-21)",
+"rdt:script" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/test_lab/bug_finding/no_exe_code.R",
+"rdt:sourcedScripts" : ""
+,
+"rdt:scriptTimeStamp" : "2017-01-10T10.34.21EST",
+"rdt:workingDirectory" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/test_lab/bug_finding",
+"rdt:ddgDirectory" : "./no_exe_code_ddg",
+"rdt:ddgTimeStamp" : "2017-01-10T10.34.56EST",
+"rdt:rdatatrackerVersion" : "2.24.1",
+"rdt:installedPackages" : [
+	{"package" : "RDataTracker", "version" : "2.24.1"}]
+}},
+"entity":{
+},
+"wasInformedBy":{
+},
+"wasGeneratedBy":{
+},
+"used":{
+}
+}

@@ -1,0 +1,175 @@
+{
+
+"prefix" : {
+"prov" : "http://www.w3.org/ns/prov#",
+"rdt" : "http://rdatatracker.org/"
+},
+"activity":{
+
+"p1" : {
+"rdt:name" : "ex108.R",
+"rdt:type" : "Start",
+"rdt:elapsedTime" : "1.58",
+"rdt:scriptNum" : "NA",
+"rdt:startLine" : "NA",
+"rdt:startCol" : "NA",
+"rdt:endLine" : "NA",
+"rdt:endCol" : "NA"
+} ,
+
+"p2" : {
+"rdt:name" : "data(mtcars)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "1.586",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "1",
+"rdt:startCol" : "1",
+"rdt:endLine" : "1",
+"rdt:endCol" : "13"
+} ,
+
+"p3" : {
+"rdt:name" : "allCars.df <- mtcars",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "1.616",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "2",
+"rdt:startCol" : "1",
+"rdt:endLine" : "2",
+"rdt:endCol" : "20"
+} ,
+
+"p4" : {
+"rdt:name" : "mpg = allCars.df$mpg",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "1.642",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "3",
+"rdt:startCol" : "1",
+"rdt:endLine" : "3",
+"rdt:endCol" : "3"
+} ,
+
+"p5" : {
+"rdt:name" : "ex108.R",
+"rdt:type" : "Finish",
+"rdt:elapsedTime" : "1.69",
+"rdt:scriptNum" : "NA",
+"rdt:startLine" : "NA",
+"rdt:startCol" : "NA",
+"rdt:endLine" : "NA",
+"rdt:endCol" : "NA"
+} ,
+
+"environment" : {
+"rdt:name" : "environment",
+"rdt:architecture" : "x86_64",
+"rdt:operatingSystem" : "unix",
+"rdt:language" : "R",
+"rdt:rVersion" : "R version 3.3.1 (2016-06-21)",
+"rdt:script" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/test_lab/bug_finding/ex108.R",
+"rdt:sourcedScripts" : ""
+,
+"rdt:scriptTimeStamp" : "2017-01-10T10.39.43EST",
+"rdt:workingDirectory" : "/Users/hermes/Projects/HF/projects/Dprov/projects/dev/test_lab/bug_finding",
+"rdt:ddgDirectory" : "./ex108_ddg",
+"rdt:ddgTimeStamp" : "2017-01-10T10.39.51EST",
+"rdt:rdatatrackerVersion" : "2.24.1",
+"rdt:installedPackages" : [
+	{"package" : "RDataTracker", "version" : "2.24.1"}]
+}},
+"entity":{
+
+"d1" : {
+"rdt:name" : "mtcars [ENV]",
+"rdt:value" : "data/1-mtcars.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "TRUE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d2" : {
+"rdt:name" : "allCars.df",
+"rdt:value" : "data/2-allCars.df.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d3" : {
+"rdt:name" : "mpg [ENV]",
+"rdt:value" : "data/3-mpg.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "TRUE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d4" : {
+"rdt:name" : "mpg",
+"rdt:value" : "data/4-mpg.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+}},
+"wasInformedBy":{
+
+"e1" : {
+"prov:informant" : "p1",
+"prov:informed" : "p2"
+} ,
+
+"e3" : {
+"prov:informant" : "p2",
+"prov:informed" : "p3"
+} ,
+
+"e6" : {
+"prov:informant" : "p3",
+"prov:informed" : "p4"
+} ,
+
+"e10" : {
+"prov:informant" : "p4",
+"prov:informed" : "p5"
+}},
+"wasGeneratedBy":{
+
+"e5" : {
+"prov:entity" : "d2",
+"prov:activity" : "p3"
+} ,
+
+"e9" : {
+"prov:entity" : "d4",
+"prov:activity" : "p4"
+}},
+"used":{
+
+"e2" : {
+"prov:activity" : "p2",
+"prov:entity" : "d1"
+} ,
+
+"e4" : {
+"prov:activity" : "p3",
+"prov:entity" : "d1"
+} ,
+
+"e7" : {
+"prov:activity" : "p4",
+"prov:entity" : "d2"
+} ,
+
+"e8" : {
+"prov:activity" : "p4",
+"prov:entity" : "d3"
+}}
+}
