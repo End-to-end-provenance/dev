@@ -17,7 +17,7 @@ ddg.bug.report <- function(file = 'R script file path',verbose = TRUE){
 
                                         # Write to disk
     time <- gsub('-','',Sys.time());time <- gsub(':','',time);time <- gsub(' ','_',time)
-    file.path <- paste0('./rdt_results_',time,'.txt')
+    file.path <- paste0('./RDT_bug_report',time,'.txt')
     fileConn <- file(file.path)
     file.create(file.path)
     writeLines(test, fileConn)

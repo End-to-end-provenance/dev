@@ -1,0 +1,233 @@
+{
+
+"prefix" : {
+"prov" : "http://www.w3.org/ns/prov#",
+"rdt" : "http://rdatatracker.org/"
+},
+"activity":{
+
+"p1" : {
+"rdt:name" : "coerce4.R",
+"rdt:type" : "Start",
+"rdt:elapsedTime" : "4.158",
+"rdt:scriptNum" : "NA",
+"rdt:startLine" : "NA",
+"rdt:startCol" : "NA",
+"rdt:endLine" : "NA",
+"rdt:endCol" : "NA"
+} ,
+
+"p2" : {
+"rdt:name" : "y <- read.csv(\"../data/y.csv\", header = F)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "4.162",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "6",
+"rdt:startCol" : "1",
+"rdt:endLine" : "6",
+"rdt:endCol" : "39"
+} ,
+
+"p3" : {
+"rdt:name" : "x <- read.csv(\"../data/x.csv\", header = F)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "4.208",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "7",
+"rdt:startCol" : "1",
+"rdt:endLine" : "7",
+"rdt:endCol" : "39"
+} ,
+
+"p4" : {
+"rdt:name" : "sum(y)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "4.255",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "9",
+"rdt:startCol" : "1",
+"rdt:endLine" : "9",
+"rdt:endCol" : "6"
+} ,
+
+"p5" : {
+"rdt:name" : "z <- cbind(y, x)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "4.271",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "11",
+"rdt:startCol" : "1",
+"rdt:endLine" : "11",
+"rdt:endCol" : "15"
+} ,
+
+"p6" : {
+"rdt:name" : "apply(x, 2, sum)",
+"rdt:type" : "Operation",
+"rdt:elapsedTime" : "4.311",
+"rdt:scriptNum" : "0",
+"rdt:startLine" : "13",
+"rdt:startCol" : "1",
+"rdt:endLine" : "13",
+"rdt:endCol" : "14"
+} ,
+
+"environment" : {
+"rdt:name" : "environment",
+"rdt:architecture" : "x86_64",
+"rdt:operatingSystem" : "unix",
+"rdt:language" : "R",
+"rdt:rVersion" : "R version 3.3.2 (2016-10-31)",
+"rdt:script" : "/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/src/coerce4.R",
+"rdt:sourcedScripts" : ""
+,
+"rdt:scriptTimeStamp" : "2016-12-19T15.52.25EST",
+"rdt:workingDirectory" : "/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/src",
+"rdt:ddgDirectory" : "../../dev/test_lab/ddg_coerce4",
+"rdt:ddgTimeStamp" : "2017-03-05T15.05.53EST",
+"rdt:rdatatrackerVersion" : "2.25.1",
+"rdt:installedPackages" : [
+	{"package" : "devtools", "version" : "1.12.0"},
+	{"package" : "RDataTracker", "version" : "2.25.1"},
+	{"package" : "rjson", "version" : "0.2.15"}]
+}},
+"entity":{
+
+"d1" : {
+"rdt:name" : "y.csv",
+"rdt:value" : "data/1-y.csv",
+"rdt:type" : "File",
+"rdt:scope" : "undefined",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d2" : {
+"rdt:name" : "y",
+"rdt:value" : "data/2-y.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d3" : {
+"rdt:name" : "x.csv",
+"rdt:value" : "data/3-x.csv",
+"rdt:type" : "File",
+"rdt:scope" : "undefined",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d4" : {
+"rdt:name" : "x",
+"rdt:value" : "data/4-x.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d5" : {
+"rdt:name" : "z",
+"rdt:value" : "data/5-z.csv",
+"rdt:type" : "Snapshot",
+"rdt:scope" : "R_GlobalEnv",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+} ,
+
+"d6" : {
+"rdt:name" : "error.msg",
+"rdt:value" : "\"Error in FUN(newX[, i], ...): invalid 'type' (character) of argument \"",
+"rdt:type" : "Exception",
+"rdt:scope" : "ddg.library",
+"rdt:fromEnv" : "FALSE",
+"rdt:timestamp" : "",
+"rdt:location" : ""
+}},
+"wasInformedBy":{
+
+"e1" : {
+"prov:informant" : "p1",
+"prov:informed" : "p2"
+} ,
+
+"e4" : {
+"prov:informant" : "p2",
+"prov:informed" : "p3"
+} ,
+
+"e7" : {
+"prov:informant" : "p3",
+"prov:informed" : "p4"
+} ,
+
+"e9" : {
+"prov:informant" : "p4",
+"prov:informed" : "p5"
+} ,
+
+"e13" : {
+"prov:informant" : "p5",
+"prov:informed" : "p6"
+}},
+"wasGeneratedBy":{
+
+"e3" : {
+"prov:entity" : "d2",
+"prov:activity" : "p2"
+} ,
+
+"e6" : {
+"prov:entity" : "d4",
+"prov:activity" : "p3"
+} ,
+
+"e12" : {
+"prov:entity" : "d5",
+"prov:activity" : "p5"
+} ,
+
+"e15" : {
+"prov:entity" : "d6",
+"prov:activity" : "p6"
+}},
+"used":{
+
+"e2" : {
+"prov:activity" : "p2",
+"prov:entity" : "d1"
+} ,
+
+"e5" : {
+"prov:activity" : "p3",
+"prov:entity" : "d3"
+} ,
+
+"e8" : {
+"prov:activity" : "p4",
+"prov:entity" : "d2"
+} ,
+
+"e10" : {
+"prov:activity" : "p5",
+"prov:entity" : "d2"
+} ,
+
+"e11" : {
+"prov:activity" : "p5",
+"prov:entity" : "d4"
+} ,
+
+"e14" : {
+"prov:activity" : "p6",
+"prov:entity" : "d4"
+}}
+}

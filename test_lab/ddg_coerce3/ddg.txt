@@ -1,0 +1,26 @@
+Architecture="x86_64"
+OperatingSystem="unix"
+Language="R"
+LanguageVersion="R version 3.3.2 (2016-10-31)"
+RDataTrackerVersion="2.25.1"
+Script="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/src/coerce3.R"
+SourcedScripts=""
+ProcessFileTimestamp="2016-12-19T15.48.21EST"
+WorkingDirectory="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/src"
+DDGDirectory="/Users/hermes/Labs/HF/projects/Dprov/projects/dev/test_lab/ddg_coerce3"
+DateTime="2017-03-05T15.25.07EST"
+InstalledPackages="bitops 1.0-6, d3Network 0.5.2.1, devtools 1.12.0, RCurl 1.95-4.8, RDataTracker 2.25.1, rjson 0.2.15"
+3
+Start p1 "1-coerce3.R" Value="coerce3.R" Time="10.601" Script="NA" Pos="NA";
+Operation p2 "2-x <- read.csv(\"../data/x.csv\", header = F)" Value="x <- read.csv(\"../data/x.csv\", header = F)" Time="10.606" Script="0" Pos="9,1,9,39";
+CF p1 p2
+File d1 "1-x.csv" Value="data/1-x.csv" Time="2017-03-05T15.25.07EST" Location="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/data/x.csv";
+DF d1 p2
+Snapshot d2 "2-x" Value="data/2-x.csv" Time="2017-03-05T15.25.08EST";
+DF p2 d2
+Operation p3 "3-sum(x)" Value="sum(x)" Time="10.654" Script="0" Pos="10,1,10,6";
+CF p2 p3
+DF d2 p3
+Exception d3 "3-error.msg" Value="\"Error in FUN(X[[i]], ...): only defined on a data frame with all numeric variables \"";
+DF p3 d3
+

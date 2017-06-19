@@ -1,0 +1,41 @@
+Architecture="x86_64"
+OperatingSystem="unix"
+Language="R"
+LanguageVersion="R version 3.3.2 (2016-10-31)"
+RDataTrackerVersion="2.25.1"
+Script="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/src/coerce4.R"
+SourcedScripts=""
+ProcessFileTimestamp="2016-12-19T15.52.25EST"
+WorkingDirectory="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/src"
+DDGDirectory="../../dev/test_lab/ddg_coerce4"
+DateTime="2017-03-05T15.05.53EST"
+InstalledPackages="devtools 1.12.0, RDataTracker 2.25.1, rjson 0.2.15"
+6
+Start p1 "1-coerce4.R" Value="coerce4.R" Time="4.158" Script="NA" Pos="NA";
+Operation p2 "2-y <- read.csv(\"../data/y.csv\", header = F)" Value="y <- read.csv(\"../data/y.csv\", header = F)" Time="4.162" Script="0" Pos="6,1,6,39";
+CF p1 p2
+File d1 "1-y.csv" Value="data/1-y.csv" Time="2017-03-05T15.05.53EST" Location="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/data/y.csv";
+DF d1 p2
+Snapshot d2 "2-y" Value="data/2-y.csv" Time="2017-03-05T15.05.53EST";
+DF p2 d2
+Operation p3 "3-x <- read.csv(\"../data/x.csv\", header = F)" Value="x <- read.csv(\"../data/x.csv\", header = F)" Time="4.208" Script="0" Pos="7,1,7,39";
+CF p2 p3
+File d3 "3-x.csv" Value="data/3-x.csv" Time="2017-03-05T15.05.53EST" Location="/Users/hermes/Labs/HF/projects/Dprov/projects/eep-usecases/data/x.csv";
+DF d3 p3
+Snapshot d4 "4-x" Value="data/4-x.csv" Time="2017-03-05T15.05.53EST";
+DF p3 d4
+Operation p4 "4-sum(y)" Value="sum(y)" Time="4.255" Script="0" Pos="9,1,9,6";
+CF p3 p4
+DF d2 p4
+Operation p5 "5-z <- cbind(y, x)" Value="z <- cbind(y, x)" Time="4.271" Script="0" Pos="11,1,11,15";
+CF p4 p5
+DF d2 p5
+DF d4 p5
+Snapshot d5 "5-z" Value="data/5-z.csv" Time="2017-03-05T15.05.53EST";
+DF p5 d5
+Operation p6 "6-apply(x, 2, sum)" Value="apply(x, 2, sum)" Time="4.311" Script="0" Pos="13,1,13,14";
+CF p5 p6
+DF d4 p6
+Exception d6 "6-error.msg" Value="\"Error in FUN(newX[, i], ...): invalid 'type' (character) of argument \"";
+DF p6 d6
+

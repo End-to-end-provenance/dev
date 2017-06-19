@@ -1,3 +1,13 @@
-hffill <- matrix(100,10)
-year <- 2010
-assign(paste("Resids", year-2, year+2, sep="."),rep(NA, nrow(hffill)))
+### Load some data
+data(iris)
+
+### Do some data munging
+iris[1,4] <- 500
+
+### Run a linear regression
+lm.fit <- lm(Sepal.Length~Sepal.Width,data=iris)
+lm.summary <- summary(lm.fit)
+
+### Save output
+dir.create('results',showWarnings = FALSE)
+capture.output(lm.summary, file="results/anova_table_1.txt") 
