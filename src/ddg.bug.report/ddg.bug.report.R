@@ -11,7 +11,8 @@ ddg.bug.report <- function(file = 'R script file path',verbose = TRUE){
 
                                         # Capture output
     out <- capture.output(ddg.run(file))
-    test <- c('Environment',capture.output(version),
+    test <- c('Environment',capture.output(version),capture.output(
+        installed.packages()[installed.packages()[,1] == 'RDataTracker',]),
               'RDataTracker Input',readLines(file),
               'RDataTracker Output',out)
 
