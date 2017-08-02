@@ -1,0 +1,41 @@
+Architecture="x86_64"
+OperatingSystem="unix"
+Language="R"
+LanguageVersion="R version 3.4.0 (2017-04-21)"
+RDataTrackerVersion="2.26.1"
+Script="/Users/hermes/Labs/HF/projects/e2ep/projects/dev/src/ddg.bug.report/example_debug.R"
+SourcedScripts=""
+ProcessFileTimestamp="2017-06-19T16.36.42EDT"
+WorkingDirectory="/Users/hermes/Labs/HF/projects/e2ep/projects/dev/src/ddg.bug.report"
+DDGDirectory="./example_debug_ddg"
+DateTime="2017-06-20T15.24.54EDT"
+InstalledPackages="base 3.4.0, datasets 3.4.0, graphics 3.4.0, grDevices 3.4.0, methods 3.4.0, RDataTracker 2.26.1, stats 3.4.0, utils 3.4.0"
+8
+Start p1 "1-example_debug.R" Value="example_debug.R" Time="0.188" Script="NA" Pos="NA";
+Operation p2 "2-data(iris)" Value="data(iris)" Time="0.23" Script="0" Pos="2,1,2,10";
+CF p1 p2
+Snapshot d1 "1-iris [ENV]" Value="data/1-iris.csv" ValType="\"{\"container\":\"data_frame\", \"dimension\":[150,5], \"type\":[\"numeric\",\"numeric\",\"numeric\",\"numeric\",\"factor\"]}\"" Time="2017-06-20T15.24.55EDT";
+DF d1 p2
+Operation p3 "3-iris[1, 4] <- 500" Value="iris[1, 4] <- 500" Time="0.415" Script="0" Pos="5,1,5,16";
+CF p2 p3
+DF d1 p3
+Snapshot d2 "2-iris" Value="data/2-iris.csv" ValType="\"{\"container\":\"data_frame\", \"dimension\":[150,5], \"type\":[\"numeric\",\"numeric\",\"numeric\",\"numeric\",\"factor\"]}\"" Time="2017-06-20T15.24.55EDT";
+DF p3 d2
+Operation p4 "4-lm.fit <- lm(Sepal.Length ~ Sepal.Width, data = iris)" Value="lm.fit <- lm(Sepal.Length ~ Sepal.Width, data = iris)" Time="0.823" Script="0" Pos="8,1,8,48";
+CF p3 p4
+DF d2 p4
+Snapshot d3 "3-lm.fit" Value="data/3-lm.fit.txt" ValType="\"\"list\"\"" Time="2017-06-20T15.24.55EDT";
+DF p4 d3
+Operation p5 "5-lm.summary <- summary(lm.fit)" Value="lm.summary <- summary(lm.fit)" Time="0.916" Script="0" Pos="9,1,9,29";
+CF p4 p5
+DF d3 p5
+Snapshot d4 "4-lm.summary" Value="data/4-lm.summary.txt" ValType="\"\"list\"\"" Time="2017-06-20T15.24.55EDT";
+DF p5 d4
+Operation p6 "6-dir.create(\"results\", showWarnings = FALSE)" Value="dir.create(\"results\", showWarnings = FALSE)" Time="0.947" Script="0" Pos="12,1,12,42";
+CF p5 p6
+Operation p7 "7-capture.output(lm.summary, file = \"results/anova_table_1.txt" Value="capture.output(lm.summary, file = \"results/anova_table_1.txt" Time="0.963" Script="0" Pos="13,1,13,60";
+CF p6 p7
+DF d4 p7
+Finish p8 "8-example_debug.R" Value="example_debug.R" Time="0.978" Script="NA" Pos="NA";
+CF p7 p8
+

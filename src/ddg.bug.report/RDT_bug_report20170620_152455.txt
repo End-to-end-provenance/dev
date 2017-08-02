@@ -1,0 +1,65 @@
+Environment
+               _                           
+platform       x86_64-apple-darwin15.6.0   
+arch           x86_64                      
+os             darwin15.6.0                
+system         x86_64, darwin15.6.0        
+status                                     
+major          3                           
+minor          4.0                         
+year           2017                        
+month          04                          
+day            21                          
+svn rev        72570                       
+language       R                           
+version.string R version 3.4.0 (2017-04-21)
+nickname       You Stupid Darkness         
+                                                         Package 
+                                                  "RDataTracker" 
+                                                         LibPath 
+"/Library/Frameworks/R.framework/Versions/3.4/Resources/library" 
+                                                         Version 
+                                                        "2.26.1" 
+                                                        Priority 
+                                                              NA 
+                                                         Depends 
+                                                 "R (>= 2.13.0)" 
+                                                         Imports 
+         "gtools, XML, knitr, stringr, utils, devtools, methods" 
+                                                       LinkingTo 
+                                                              NA 
+                                                        Suggests 
+                                                              NA 
+                                                        Enhances 
+                                                              NA 
+                                                         License 
+                                          "GPL-3 | file LICENSE" 
+                                                 License_is_FOSS 
+                                                              NA 
+                                           License_restricts_use 
+                                                              NA 
+                                                         OS_type 
+                                                              NA 
+                                                          MD5sum 
+                                                              NA 
+                                                NeedsCompilation 
+                                                              NA 
+                                                           Built 
+                                                         "3.4.0" 
+RDataTracker Input
+### Load some data
+data(iris)
+
+### Do some data munging
+iris[1,4] <- 500
+
+### Run a linear regression
+lm.fit <- lm(Sepal.Length~Sepal.Width,data=iris)
+lm.summary <- summary(lm.fit)
+
+### Save output
+dir.create('results',showWarnings = FALSE)
+capture.output(lm.summary, file="results/anova_table_1.txt") 
+RDataTracker Output
+[1] "Saving ddg.txt in ./example_debug_ddg"
+[1] "Saving ddg.json in ./example_debug_ddg"
